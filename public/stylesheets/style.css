@@ -1,0 +1,105 @@
+/*Custom Css File for my Portfolio
+Author's name: kyle Duffy
+web site name: Kyle Duffy's Portfolio
+file description: this file holds all of the custom styling that is required throughout my project. */
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+/* aoternate jumbotron color & set sizing*/
+#jumbotron-inverse{
+  background-color: #555555;
+ width: 400px;
+  height:150px;
+  margin-left: 33%;
+
+}
+/*  styles table on services page  */
+#tr1{
+  background-color: #adadad;
+  font-weight: bold;
+  text-align:center;
+}
+#tr2{
+  max-height: 2em;
+  background-color: #2aabd2;
+}
+#servicesTable{
+
+  max-width: 45%;
+}
+
+a {
+  color: #00B7FF;
+}
+#name_photo_div{
+  float:left;
+
+}
+/*   for submit button on contact page */
+#submitButton{
+  margin-left:45%;
+  margin-top:1%;
+
+}
+/*    */
+#Message{
+  max-width: 60%;
+  background-color: #d4d4d4;
+}
+/*  floats footer text to right side  */
+#footerText{
+  float:right;
+  color: #00B7FF;
+}
+/*  for imgs on projects page  */
+#smallcircleimg{
+  display: block;
+  margin: auto;
+  width: 33%;
+
+}
+/*  to fix overflow of paragraphs on projects page   */
+#paragraph{
+  vertical-align: middle;
+  margin-top: 1em;
+
+  display: table;
+  max-height: 260px;
+  overflow: scroll;
+}
+#paragraph.p{
+
+  display: table-cell;
+}
+#projTitle {
+  text-align: center;
+}
+#longPG{
+  max-height: 260px;
+  overflow: scroll;
+  width: 120%
+}
+
+#projGroup{
+  text-align: center;
+  vertical-align: middle;
+}
+#emailAddress,#phoneNumberInput,#nameInput
+{
+margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+
+}
+#gitLink{
+  display: block;
+  margin-left: 33%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 33%;
+  height:33%;
+
+}

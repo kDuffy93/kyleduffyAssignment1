@@ -1,0 +1,11 @@
+
+<!-- i included the header and footer on this page for easy access to the nav bar to get to where you want too after an error occurrs
+<!--  includes the header at the top of this view  -->
+<% include ./partials/header.ejs %>
+
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+
+<!-- include the footer partial ejs file -->
+<% include ./partials/footer.ejs %>

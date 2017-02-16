@@ -1,0 +1,32 @@
+<!--services view
+Author's name: kyle Duffy
+web site name: Kyle Duffy's Portfolio
+file description: This file is the view that will be loaded at /services. here will be alist of services avaible to be performed by me. -->
+
+<!--  includes the header at the top of this view  -->
+<% include ./partials/header.ejs %>
+
+    <h1>Services</h1>
+<!-- creates a table, every other row is empty as a visual spacer and styled differently.  -->
+    <table id="servicesTable" class="table table-striped">
+
+        <tr id="tr1"><td>Website Development</td></tr>
+        <tr><td id="tr2"></td></tr>
+
+        <tr id="tr1"><td>WebApp Development</td></tr>
+        <tr id="tr2"><td></td></tr>
+
+        <tr id="tr1"><td>Database Managment Services</td></tr>
+        <tr><td id="tr2"></td></tr>
+
+        <tr id="tr1"><td>Project Managment</td></tr>
+        <tr id="tr2"><td></td></tr>
+
+        <tr id="tr1"><td>Application Security</td></tr>
+        <tr><td id="tr2"></td></tr>
+
+        <tr id="tr1"><td>Hardware setup/maintence</td></tr>
+        <tr id="tr2"><td></td></tr>
+    </table>
+<!-- include the footer partial ejs file -->
+<% include ./partials/footer.ejs %>

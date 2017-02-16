@@ -1,0 +1,85 @@
+<!--projects view
+Author's name: kyle Duffy
+web site name: Kyle Duffy's Portfolio
+file description: This file is the view that will be loaded at /projects. it houses a list of my past and current projects, a link if applicable, and a description -->
+
+<!--  includes the header at the top of this view  -->
+<% include ./partials/header.ejs %>
+
+<!-- this container houses everything  -->
+    <div class="container">
+        <h1>projects</h1>
+        <!-- this dic row made it easy to only put 3 projects per line by seperating them into these row divs  -->
+        <div class="row">
+            <!-- first project div, they are all the same so im only commenting the first one.   -->
+        <div id="projGroup" class="col-xs-4">
+            <!-- this is the title of the project at the top of each entry  -->
+            <h3 id="projTitle">Lafarge Fixed Equipment Survey Automation</h3>
+            <!--  the image is styled in my custom file. points to the public images folder and is a fixed size. possible functionality issue, make it responsive. -->
+            <image id="smallcircleimg" class="img-circle" src="/images/lafarge.jpg" alt="alt picture text" width="100" height="100"></image>
+
+            <!-- this is a project description for the parent project  -->
+            <div id="paragraph" class="jumbotron">
+                <p>For this project I used asp.net, jQueryMobile, mySql, ajax to build CRUD backend to
+                    manage lafarge plant's equipment and different survey questions then build a dynamic
+                survey based on the selected piece of equipment.<br></p><!-- this provides a link to the project on github if its applicable  -->
+                <a id="gitLink" style="float:left;"href="https://github.com/kDuffy93/drwSurveys">
+                    <image src="../images/git.png" height="30" width="30" class="img-circle">
+                    </image> </a>
+            </div>
+        </div>
+        <div id="projGroup" class="col-xs-4">
+            <h3 id="projTitle">Georgian College Academic and Career Preparation</h3>
+            <image id="smallcircleimg" class="img-circle" src="/images/georgian.jpg" alt="" width="100" height="100"></image>
+
+            <div id="paragraph" class="jumbotron">
+                <p>As a group, we are working towards automating the academic and career prep intake process,
+                    some teacher administrative tools and time permitting a student portal type interface
+                technologies used: node, angular2, MongoDB<br></p><label>This project is still Privte</label>
+            </div>
+        </div>
+        <div id="projGroup" class="col-xs-4">
+            <h3 id="projTitle">Warehouse Skid Counter<br><br></h3>
+            <image id="smallcircleimg" class="img-circle" src="/images/hawks.jpg" alt="" width="100" height="100"></image>
+
+            <div id="paragraph" class="jumbotron" aria-multiline="true" onscroll="true">
+                <p id="longPG">I built this program in Java to keep track of the amount of skids coming into and going out of the store's warehouse
+                on delivery days. it kept track of how many were in the warehouse in total, a log for each day theres an entry,
+                user authentication, guest access with restricted usage, persisting local data.
+                This program was nessesary at the time because there was one driver for a company that would record that he took skids from us
+                when he hadn't yet. so it allowed tracking of how many skids we owed him<br></p><a id="gitLink" style="float:left;"href="https://github.com/kDuffy93/skidcount">
+                        <image src="../images/git.png" height="30" width="30" class="img-circle">
+                        </image> </a>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div id="projGroup" class="col-xs-4">
+                <h3 id="projTitle">name of proj</h3>
+                <image id="smallcircleimg" class="img-circle" src="/images/colors.jpg" alt="alt picture text" width="100" height="100"></image>
+                <a href="#">GIT LINK</a>
+                <div id="paragraph" class="jumbotron">
+                    <p>A description of the project goes here</p>
+                </div>
+            </div>
+            <div id="projGroup" class="col-xs-4">
+                <h3 id="projTitle">name of proj</h3>
+                <image id="smallcircleimg" class="img-circle" src="/images/apples.jpg" alt="" width="100" height="100"></image>
+                <a href="#">GIT LINK</a>
+
+                <div id="paragraph" class="jumbotron">
+                    <p>A description of the project goes here</p>
+                </div>
+            </div>
+            <div id="projGroup" class="col-xs-4">
+                <h3 id="projTitle">name of proj</h3>
+                <image id="smallcircleimg" class="img-circle" src="/images/pencilCrayons.jpg" alt="" width="100" height="100"></image>
+                <a href="#">GIT LINK</a>
+                <div id="paragraph" class="jumbotron">
+                    <p>A description of the project goes here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- include the footer partial ejs file -->
+<% include ./partials/footer.ejs %>

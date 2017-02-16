@@ -1,0 +1,40 @@
+<!--About view
+Author's name: kyle Duffy
+web site name: Kyle Duffy's Portfolio
+file description: This file is the view that will be loaded at /about. It is an about me page-->
+
+<!--  includes the header at the top of this view  -->
+<% include ./partials/header.ejs %>
+
+<div class="container-fluid">
+    <h1>About me</h1>
+    <div class="container">
+        <div class="jumbotron">
+
+            <!-- about paragraph  -->
+
+             <p>Im currently attending Georgian College and am in my 5th semester of the
+                 computer programmer analyst course.I have wored with and been exposed to many
+                 different technologies and langues since i started my program including:
+                 Php, Html5, css3, python, Java, Javascript, jQuery & jQueryMobile, the MEAN stack,
+                 mySql, sqlServer, db2, Cordova/PhoneGap and many more, aswell as being exposed to different resources
+                 for programming such as MS Visio, MS project, Git, Bootstrap, w3Schools, FileZilla aswell
+                 as many other online resources. Ive experienced different BI reporting tools such as Cognos
+                 and PowerBI. Weve looked into different aspects of project planning like SCRUM & AGILE vs Waterfall
+                 and, on a less technical note, we also focused a little bit on orginizational behavior
+                 and different principles of managment.
+                 <br><br>
+             </p>
+        </div>
+    </div>
+    <!-- social media links -->
+    <div class="jumbotron" id="jumbotron-inverse">
+        <a style="float:left;"href="https://github.com/kDuffy93">
+            <image src="../images/git.png" height="60" width="60" class="img-circle">
+            </image> </a>
+        <a style="float:right;" href="https://www.linkedin.com/in/kyle-duffy-488b6863?trk=hp-identity-name">
+            <image src="../images/linkedIn.png" height="60" width="100" class="img-circle">
+            </image> </a></div>
+</div>
+<!-- include the footer partial ejs file -->
+<% include ./partials/footer.ejs %>
